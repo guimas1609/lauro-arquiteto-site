@@ -12,7 +12,7 @@ function hasSeenIntro() { try { return window.sessionStorage.getItem(INTRO_KEY) 
 
 function Intro({ onFinish }) {
   useEffect(() => { const timeout = window.setTimeout(onFinish, INTRO_DURATION); return () => window.clearTimeout(timeout) }, [onFinish])
-  return <div className="intro" aria-hidden="true"><p className="intro__line intro__line--one">Espaços que inspiram.</p><p className="intro__line intro__line--two">Projetos com personalidade.</p><p className="intro__line intro__line--three">Arquitetura para viver.</p></div>
+  return <div className="intro" aria-hidden="true"><p className="intro__line intro__line--one">Arquitetura que acolhe.</p><p className="intro__line intro__line--two">Interiores com identidade.</p><p className="intro__line intro__line--three">Espaços para viver.</p></div>
 }
 
 function usePortraitParallax(layerRef) {
