@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.vercel/
+render-check.png
+
+*.local
+.env
+.env.*
+
+.vercel
